@@ -1,0 +1,26 @@
+
+three rows
+1 - logo . todo list left
+2 - center items -  image, [ Full Name, Bio, ] ff-n0, fll-num repo numver - https://api.github.com/users/iemeka
+3 - main content - github image at background -  
+  - https://api.github.com/users/iemeka/repos?type=all&sort=updated
+  - html-url - link - bottom left
+  - name
+  - description [cut with ...]
+  - stargazers_count
+  - watchers_count
+
+  design - AYoKA
+
+fetch and display data.
+Todo list  - slide in from left
+- Redux for todo list - check totorial now - clionton
+- Netlify Identity login - signup - logout (bottom right of page.)
+  - get gitusername
+  - save in redux - use to make requests - make request first before page loads
+
+design
+animation
+dark mode
+if git user name fetches no data - return with error messages
+
