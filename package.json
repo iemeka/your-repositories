@@ -9,7 +9,9 @@
     "@testing-library/user-event": "^12.8.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
     "react-scripts": "4.0.3",
+    "redux": "^4.1.0",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
@@ -37,6 +39,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3"
+    "react-netlify-identity-gotrue": "^0.3.5"
   }
 }

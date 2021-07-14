@@ -27,7 +27,27 @@ if git user name fetches no data - return with error messages
 
 
 normally
-login first- so we do Netlify Identity first
+login first - so we do Netlify Identity first
+  - host on netlify
+  - implement authentication  - react-netlify-Identity-gotrue
+  login and logout working.
+  todolist - done.
 
-set up gh-page to register site to netlify Identity
+design. next.
 
+
+
+  // const seeObject = useSelector((state) => state.userObject);
+  // const dispatch = useDispatch();
+  // <button onClick={() => dispatch(updateUserObject("dd"))}>update object</button>
+  //       {`${seeObject}`}
+
+
+  // import { useDispatch, useSelector } from "react-redux";
+// import { getUserObject ,updateUserObject} from "./redux/action";
+
+incorrect git user name - check
+
+todo list not persistent
+
+todo list - mark as done. 

@@ -1,0 +1,93 @@
+.todo-wrap {
+  /* border: 3px solid #9daab8; */
+  height: 700px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 400px;
+  background-color: #fff;
+  box-shadow: 0 0 20px #ccc;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 600ms ease-in-out, visibility 600ms ease-in-out;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.todo-wrap .display-board {
+  border: 1px solid #ccc;
+  height: 550px;
+  overflow-y: scroll;
+}
+
+.todo-wrap .task-row {
+  border-bottom: 1px solid #c5d2dfd7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.task-row .text {
+  width: 210px;
+}
+
+.task-row .text span {
+  word-wrap: break-word;
+}
+
+.task-row .task-btn button {
+  border: 0px;
+  padding: 5px 10px;
+  background-color: #2b6cb0;
+  font-weight: 300;
+  color: white;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-left: 3px;
+}
+
+.todo-wrap .add-task-form form {
+  display: flex;
+}
+
+.todo-wrap .add-task-form input[type="text"] {
+  flex: 1;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.todo-wrap .add-task-form input[type="text"]:focus {
+  outline: none;
+}
+
+.todo-wrap .add-task-form input[type="submit"] {
+  font-size: 0.8rem;
+  padding: 10px 20px;
+  background-color: #2b6cb0;
+  color: #fff;
+  text-transform: uppercase;
+  border: 0px;
+}
+
+.todo-wrap .add-task-form input[type="submit"]:hover {
+  background-color: #86aed6;
+}
+
+.todo-wrap .add-btn {
+  border: 0px;
+  padding: 10px 20px;
+  background-color: #172f46;
+  font-weight: 300;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-right: 10px;
+}
