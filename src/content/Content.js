@@ -4,6 +4,7 @@ import { useIdentityContext } from "react-netlify-identity-gotrue";
 import About from "./about/About";
 import { useSelector } from "react-redux";
 import TodoList from "../todoList/TodoList";
+import LogIn from "./form/LogIn";
 
 export default function Content() {
   const identity = useIdentityContext();
@@ -11,7 +12,7 @@ export default function Content() {
   return (
     <div className="content-wrap">
       {identity.user == null ? (
-        content
+        content || <LogIn />
       ) : (
         <>
           <TodoList />
