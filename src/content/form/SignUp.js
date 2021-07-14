@@ -1,3 +1,4 @@
+import "./Login.css";
 import { useCallback, useState } from "react";
 import { useIdentityContext } from "react-netlify-identity-gotrue";
 export default function SignUp() {
@@ -21,33 +22,38 @@ export default function SignUp() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h1>Login</h1>
-      <div>
-        <label>
-          git user name:{" "}
-          <input
-            name="username"
-            placeholder="git hub username "
-            onChange={(e) => setMetaData({ gitId: e.target.value })}
-            type="text"
-            required
-          />{" "}
-        </label>
-      </div>
-      <div>
-        <label>
-          email:
-          <input name="email" type="text" onChange={updateData} />
-        </label>
-      </div>
-      <div>
-        <label>
-          password: <input name="password" onChange={updateData} type="text" />{" "}
-        </label>
-      </div>
-      <div>{error}</div>
-      <button>submit</button>
-    </form>
+    <div className="login-form">
+      <form onSubmit={handleSubmit}>
+        <h1>Signup</h1>
+        <div>
+          <label>
+            <input
+              name="username"
+              placeholder="GitHub User Name"
+              onChange={(e) => setMetaData({ gitId: e.target.value })}
+              type="text"
+              required
+            />{" "}
+          </label>
+        </div>
+        <div>
+          <label>
+            <input
+              name="email"
+              type="text"
+              placeholder="Email "
+              onChange={updateData}
+            />
+          </label>
+        </div>
+        <div>
+          <label>
+            <input name="password"  placeholder="Password" onChange={updateData} type="text" />{" "}
+          </label>
+        </div>
+        <div>{error}</div>
+        <button>submit</button>
+      </form>
+    </div>
   );
 }

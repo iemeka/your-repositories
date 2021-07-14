@@ -1,3 +1,5 @@
+import "./Login.css";
+
 import { useCallback, useState } from "react";
 import { useIdentityContext } from "react-netlify-identity-gotrue";
 
@@ -23,21 +25,32 @@ export default function LogIn() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h1>Login</h1>
-      <div>
-        <label>
-          email:
-          <input name="email" type="text" onChange={updateData} />
-        </label>
-      </div>
-      <div>
-        <label>
-          password: <input name="password" onChange={updateData} type="text" />{" "}
-        </label>
-      </div>
-      <div>{error}</div>
-      <button>submit</button>
-    </form>
+    <div className="login-form">
+      <form onSubmit={handleSubmit}>
+        <h1>Login</h1>
+        <div>
+          <label>
+            <input
+              name="email"
+              placeholder="Email"
+              type="text"
+              onChange={updateData}
+            />
+          </label>
+        </div>
+        <div>
+          <label>
+            <input
+              name="password"
+              placeholder="Password"
+              onChange={updateData}
+              type="text"
+            />{" "}
+          </label>
+        </div>
+        <div className="error">{error}</div>
+        <button>submit</button>
+      </form>
+    </div>
   );
 }
