@@ -19,18 +19,10 @@ export default function Repositories() {
       .then((response) => response.json())
       .then((data) => setRepos(data))
       .catch((err) => console.log(err));
-  }, []);
+  }, [metaData.gitId]);
   return (
     <div className="repo-wrapper">
-      {console.log(repos)}
-      {/* <a href="som">
-        <div className="one-repo">
-          <h2>Banking App</h2>
-          <p>Nice Apppp </p>
-          <p>stars :3 </p>
-          <p>watchers :23 </p>
-        </div>
-      </a> */}
+
       {repos
         ? repos.map((repo, index) => (
             <a href={repo.html_url}>

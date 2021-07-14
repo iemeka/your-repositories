@@ -1,5 +1,4 @@
 import "./Content.css";
-import LogIn from "./form/LogIn";
 import Repositories from "./repo/Repositories";
 import { useIdentityContext } from "react-netlify-identity-gotrue";
 import About from "./about/About";
