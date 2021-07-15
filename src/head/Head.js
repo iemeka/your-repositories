@@ -18,7 +18,7 @@ export default function Head() {
   return (
     <div className="head-wrap">
       <div className="head-one">
-        <h2>Your repositories</h2>
+        <h2>Your Repositories</h2>
         {identity.user ? (
           logOut
         ) : (
